@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/main",
+    "start:dev": "nodemon --watch \".\" --ext \"ts, json\" --ignore \"*.spec.ts\" --exec \"ts-node main.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.7.9",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   }
 }
