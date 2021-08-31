@@ -1,0 +1,6 @@
+# IDE Specific
+.vscode/
+
+# Node specific
+node_modules/
+dist/
